@@ -28,7 +28,7 @@ const ProductsPage = () => {
 
     return (
         <div className={styles.wrapper}>
-            <ProductTable data={result} isLoading={productsLoading} />
+            <ProductTable data={result} isLoading={productsLoading} idsLoading={idsLoading} />
             <Pagination />
         </div>
     )

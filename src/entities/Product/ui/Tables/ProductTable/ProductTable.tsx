@@ -8,12 +8,13 @@ import { Loader } from 'shared/ui/Loader/Loader';
 interface ProductTableProps {
     data: ProductTypes[];
     isLoading: boolean;
+    idsLoading: boolean;
 }
 
-const ProductTable: React.FC<ProductTableProps> = ({ data, isLoading }) => {
+const ProductTable: React.FC<ProductTableProps> = ({ data, isLoading, idsLoading }) => {
 
     const renderProducts = useMemo(() => {
-        if (isLoading) return <Loader />
+        if (isLoading || idsLoading) return <Loader />
         return data.map((el) => (
             <ProductTableCell key={el.id} data={el} />
         ))
