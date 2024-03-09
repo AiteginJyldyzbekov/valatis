@@ -1,0 +1,9 @@
+/build
+/dist
+/node_modules
+.idea
+.vscode
+/coverage
+/storybook-static
+
+yarn-error.log

@@ -1,0 +1,39 @@
+.select {
+    position: relative;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; 
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+  }
+  
+  option {
+    background-color: #fff;
+    color: #333;
+  }
+
+  option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  option:checked {
+    background-color: #e0e0e0;
+  }

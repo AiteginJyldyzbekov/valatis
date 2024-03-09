@@ -1,0 +1,24 @@
+@import "reset.scss";
+@import "variables/globals.scss";
+@import "themes/dark.scss";
+@import "themes/normal.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Questrial&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.app {
+  font-size: var(--font-m);
+  font-family: var(--font-family-main);
+  background: var(--bg-color);
+  color: var(--primary-color);
+
+  min-height: 100vh;
+}
+
+.content-page {
+  display: flex;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+
+}
