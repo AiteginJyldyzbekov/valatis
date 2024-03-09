@@ -21,7 +21,7 @@ export default (env: BuildEnv) => {
     paths,
     isDev,
     port: PORT,
-    apiUrl: "http://api.valantis.store:40000/"
+    apiUrl: "https://api.valantis.store:41000/"
   })
 
   return config
